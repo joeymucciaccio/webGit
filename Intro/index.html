@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Joseph's Website</title>
+      <link rel="icon" href="jm.jpg">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+          body {
+            font: 20px Calibri, sans-serif;
+            line-height: 1.8;
+            color: white;
+          }
+          p {
+              font-size: 20px;
+          }
+          em {
+              color: black;
+          }
+          .margin {
+              margin-bottom: 50px;
+          }
+          .margin4 {
+              margin-top: 25px;
+          }
+          h3 {
+              font-size:40px;
+          }
+          h4 {
+              font-size:25px;
+          }
+          h5 {
+              font-size:20px;
+              color:aliceblue
+          }
+          .bg-1 { 
+            background-color: royalblue;
+            color: white;
+          }
+          .bg-2 { 
+            background-color: lightseagreen;
+            color: white;
+          }
+          .bg-3 { 
+            background-color: lightblue; 
+            color: black;
+          }
+          .bg-4 { 
+            background-color: li; 
+            color: black;
+          }
+          .bg-5 { 
+            background-color: gray; 
+            color: white;
+          }
+          .bg-6 { 
+            background-color: black; 
+            color: white;
+          }
+          .bg-7 { 
+            background-color: lightslategrey; 
+            color: white;
+          }
+          .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+          }
+          .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 3px;
+            font: Calibri;
+          }
+          .navbar  li a:hover {
+            color: black;
+          }
+          #grid-container {
+            width: 400px;
+            font-size: 2em;
+            background: cornflowerblue;
+            display: grid;
+            grid-template-columns: 20 20 20;
+            grid-gap: 5px 5px;
+          }
+
+          #grid-container > div {
+            background: powderblue;
+            padding: 10px;
+          }
+          img[src="images/newpicofme.jpg"] {
+              float: right;
+          }
+          img[src="images/back_to_top"] {
+              background-color: black;
+          }
+          .column {
+              float: left;
+              width: 50%;
+              padding: 5px;
+          }
+          .row::after {
+              content: "";
+              clear: both;
+              display: table;
+          }
+          .col-sm-4 {
+              float: left;
+              width: 33%;
+              padding: 5px;
+          }
+          label {
+              display: inline-block;
+              text-align: right;
+              margin-right: 8px;
+          }
+          input[type=text], select {
+              width: 350px;
+              padding: 10px;
+              margin: 6px 0;
+              border: 1px solid #aaa;
+              border-radius: 4px;
+              color: black;
+          }
+          input[type=submit] {
+              width: 200px;
+              background-color: #09f;
+              color: white;
+              padding: 15px;
+              margin: 10px;
+              border: 0;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+          input[type=submit]:hover {
+              background-color: #07d;
+          }
+          input[type=reset] {
+              background-color: black;
+              color: white;
+          }
+          fieldset {
+              margin-top: 40px;
+          }
+      </style>
+    </head>
+        <body>
+            <nav class="navbar">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navigation">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#education">Education</a>&nbsp;</li>
+                    <li><a href="#car">Car</a>&nbsp;</li>
+                    <li><a href="#sports">Sports</a>&nbsp;</li>
+                    <li><a href="#song">Song</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <body>
+                <div class="container-fluid bg-1 text-center">
+                    <h3 class="margin">Joseph Mucciaccio</h3>
+                    <div class="row">
+                        <div class="column">
+                              <img src="images/newpicofme.jpg" class="margin" alt="newpicofme" width="400" height="580">
+                        </div>
+                        <div class="column">
+                                <div id="grid-container">
+                                        <div><em>Height:</em> 6'0''</div>
+                                        <div><em>Weight:</em> 200lbs</div>
+                                        <div><em>Age:</em> 20</div>
+                                        <div><em>Eye color:</em> Green</div>
+                                        <div><em>Hair color:</em> Brown</div>
+                                        <div><em>DOB:</em> 10/04/1999</div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            <section id="education">
+                <div class="container-fluid bg-2 text-center">
+                  <h3 class="margin">Education</h3>
+                    <h4 class="margin4"><a href="https://www.browardschools.com/pompanobeachhigh" target="_blank">Pompano Beach High School</a></h4>
+                        <p>
+                          <span>I spent 4 years at Pompano Beach High school and I can safely say that it was an amazing school.</span>
+                          <span>Pompano Beach High was not like any ordinary high school, it was more strict and had a minimum GPA of 2.5 to stay in the school.</span>
+                          <span>My main focus was to get good grades and decide what I would want to do for the rest of my life.</span>
+                          <span>In 11th grade, I took a course that revolved around using the famous coding website known as <a href="https://code.org/" target="_blank">code.org</a> that would eventually give me the idea of majoring in computer science and help me find a career path that I would most enjoy.</span>
+                        </p>
+                        <h4 class="margin4"><a href="https://www.fau.edu/" target="_blank">Florida Atlantic University</a></h4>
+                        <p>
+                          Florida Atlantic University was my first choice when applying to different colleges/universities.
+                          My brother is two years older than me and attended FAU, so I thought I would have someone to show me the ropes of the school.
+                          My first year was definitely a roller coaster with many ups and downs, but it gave me the chance of find out who I wanted to be and what I wanted to do with my life.
+                          I have met some amazing people and have made many new friendships.
+                          I hope to find internships in the year to come and most importantly a career opportunity.
+                        </p>
+                </div>
+            </section>
+            <section id="car">
+                <div class="container-fluid bg-3 text-center">    
+                  <h3>Car</h3><br>
+                        <p>2017 Challenger R/T V8 - This is the website where I got my car, click 
+                            <a href="https://www.dodge.com/challenger.html" target="_blank">Here.</a>
+                        </p>
+                        <img src="images/challenger.jpg" height=300>
+                </div>
+            </section>
+            <section id="sports">  
+                <div class="container-fluid bg-4 text-center">    
+                  <h3 class="margin">Sports</h3><br>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>Baseball</p>
+                        <button type="submit" data-toggle="modal" data-target="#myModal1"><img src="images/baseball.gif" style="width:100%" alt="baseball"></button>
+                        <div class="modal fade" tabindex="-1" role="dialog" id="myModal1">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                               <div class="modal-header">
+                                  <h4 class="modal-title">My experience with baseball:</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                  </button>
+                               </div>
+                               <div class="modal-body">
+                                  <p>Baseball has been the sport I played the longest and definietly one of my all time favorite sports to play. I started when I was 5 years old and played all the way till I was 15. I enjoyed it when I was younger, but as I grew older I started to find it boring and wanted to try other sports. However, it will always remain one of the best.</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6"> 
+                      <p>Basketball</p>
+                        <button type="submit" data-toggle="modal" data-target="#myModal2"><img src="images/basketball.gif" style="width:100%" style="height:100%" alt="basketball"></button>
+                        <div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                               <div class="modal-header">
+                                  <h4 class="modal-title">My experience with basketball:</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                  </button>
+                               </div>
+                               <div class="modal-body1">
+                                  <p>I have played basketball ever since I was 6 years old. I used to play in a little league with my brother and cousins when I was around this age. Now, I have practiced numerous hours and still play with my friends almost every weekend and enjoy the engaging activity.</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12"> 
+                      <p>Football</p>
+                      <button type="submit" data-toggle="modal" data-target="#myModal3"><img src="images/football.gif" style="width:100%" height="100%" alt="football"></button>
+                      <div class="modal fade" tabindex="-1" role="dialog" id="myModal3">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                               <div class="modal-header">
+                                  <h4 class="modal-title">My experience with football:</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                  </button>
+                               </div>
+                               <div class="modal-body2">
+                                  <p>I used to play football with my neighborhood friends and family all the time when I was younger. However, I never got into any recreational league because I was never interested in it. Although, I do enjoy playing fantasy football with a group of friends from school and have been since 2016.</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div>
+                        <fieldset>
+                          <legend>Favorite sport out of the three:</legend>
+
+                          <input type="radio" name="sport" value="Baseball">
+                          <label for="baseball">Baseball</label>
+
+                          <input type="radio" name="sport" value="Basketball">
+                          <label for="basketball">Basketball</label>
+
+                          <input type="radio" name="sport" value="football">
+                          <label for="football">Football</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </section>
+            <section id="song">
+                <div class="container-fluid bg-5 text-center">  
+                    <h3>Song</h3>
+                        <p>
+                            This is one of my favorite songs!
+                        </p>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/J2X5mJ3HDYE">
+                    </iframe>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container-fluid bg-7 text-center">
+                    <h3>Contact Information</h3>
+                    <h5>Email: joeymucciaccio@gmail.com</h5>
+                    
+                    <form action="mailto:joeymucciaccio@gmail.com" method="post" enctype="text/plain">
+                        Name:<br>
+                        <input type="text" name="name"><br>
+                        E-mail:<br>
+                        <input type="text" name="mail"><br>
+                        Comment:<br>
+                        <input type="text" name="comment" size="50"><br><br>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid bg-5 text-center">
+                    <form action="#top">
+                        <button type="submit" color="black">
+                            <img src="images/back_to_top.png" height="50" alt="home"><br>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <footer class="container-fluid bg-6 text-center">
+                      <p>Assignment 2 for COP3813 - Internet Computing - Joseph Mucciaccio
+                      </p> 
+                    </footer>
+                </div>
+            </section>
+        </body>
+</html>
