@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Major+Mono+Display&family=Share+Tech+Mono&display=swap');
+
+body {
+	background-color: black;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	background-image: url('black.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+*{
+    font-family: 'Helvetica';
+}
+h1	{
+	font-size: 100px;
+	color: white;
+	margin: 15px 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+h2	{
+	font-size: 50px;
+    color: red;
+}
+h3{
+    color: red;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    font-size: 50px;
+}
+h4{
+    color: white;
+    font-size: 100px;
+}
+
+.main, .second{
+	margin:150px;
+	position:relative;
+	display: block;
+}
+
+.unit , .sub{
+	font-size: 15px;
+}
+
+footer	{
+	background-color: rgba(100,100,100,0.5);
+	color: rgb(255,255,255);
+	font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.7rem;
+}
+.select_button{
+	margin: 20px;
+}
+p{
+    color: ghostwhite;
+    font-size: 20
+}
+.text1{
+    color: red;
+}
+.log{
+    padding-left: 100px
+}

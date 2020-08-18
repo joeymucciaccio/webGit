@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="weather.css">
+	
+    <title>Weather Forecast</title>
+  </head>
+  
+  <body>
+	<div class="container-fluid">
+		<div class="main">
+		
+		<h4>Current Weather</h4>
+		<h2> in Your City</h2>
+		<br><br>
+		
+		<form method="POST" action="index.php">
+			<label> Enter Your ZIP:
+				<input type="text" name="zip" required>
+			</label>
+			<br>
+			<br>
+				<button class="btn btn-outline-light" type="submit">Get Forecast</button>
+		</form>
+		
+		<br>
+		<button onclick="window.location.href = 'login.php';" class="btn btn-outline-light">Log in</button>
+		<button onclick="window.location.href = 'register.php';" class="btn btn-outline-light">Sign up</button>
+		
+		</div>
+	</div>
+	
+  </body>  
+</html>
